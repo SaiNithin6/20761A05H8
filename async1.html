@@ -1,0 +1,24 @@
+<html>
+<head>
+<h2 id="demo" ></h2>
+<script>
+function f1(){
+	document.write("First Function");
+}
+function f2(){
+	document.write("Second Function");
+}
+function f3(){
+	var d=new Date();
+	document.getElementById("demo").innerHTML=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+}
+
+document.write("<br>");
+f2();
+document.write("<br>");
+setTimeout(f3,2000);
+document.write("<br>");
+setInterval(f1,1000); 
+</script>
+</head>
+</html>

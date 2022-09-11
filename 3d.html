@@ -1,0 +1,40 @@
+<!-- 3.d)Write a JavaScript code to book movie tickets online and calculate the total price
+based on the 3 conditions: (a) If seats to be booked are not more than 2, the cost per
+ticket remains Rs. 150. (b) If seats are 6 or more, booking is not allowed. (c) If seats to be booked are more than 2 and less than 6 with discount 5%--> 
+
+
+<html>
+<head>
+<script>
+var tprice=0,dprice,n;
+number_of_tickets=parseInt(window.prompt("enter no of tickets:"));
+document.write("n="+number_of_tickets+"<br>");
+
+if(number_of_tickets>=1 && number_of_tickets<=2)
+{
+	tprice=number_of_tickets*150;
+	document.write("<h3 style='color:skyblue'>");
+	document.write("total price for "+number_of_tickets+" tickets is "+tprice);
+}
+
+else if(number_of_tickets>=6)
+{
+	document.write("<h3 style='color:red'>");
+	document.write("Booking is not allowed");
+}
+
+else if(number_of_tickets>2 && number_of_tickets<6)
+{
+	tprice=number_of_tickets*150;
+	document.write("<h3 style='color:skyblue'>");
+	document.write("total price for "+number_of_tickets+" tickets are: "+tprice+"<br>");
+	discount=tprice*0.05;
+	document.write("<h3 style='color:green'>");
+	document.write("Discount for "+number_of_tickets+" tickets are: "+discount+"<br>");
+	dprice=tprice-discount;
+	document.write("<h3 style='color:purple'>");
+	document.write("Total price with discount for "+number_of_tickets+" tickets are: "+dprice);
+}
+</script>
+</head>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+<h1 id="d"></h1>
+<h2 id="demo"></h2>
+<h2 id="demo1"></h2>
+<script>
+function add(x,y,callback)
+{
+	document.getElementById("d").innerHTML=x+y;
+	document.write("<br>");
+	callback(17,8);
+}
+function f3(c,e)
+{
+	var d=new Date();
+	document.getElementById("demo").innerHTML=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+	document.write("<br>");
+	document.getElementById("demo1").innerHTML=c+e;
+}
+add(5,6,f3);
+</script>
+</head>
+</html>
