@@ -1,0 +1,4 @@
+-- Sample tasks for testing
+INSERT INTO Task (id, title, description, completed, createdAt, updatedAt) VALUES (1, 'Learn Quarkus', 'Study Quarkus framework and build REST APIs', false, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+INSERT INTO Task (id, title, description, completed, createdAt, updatedAt) VALUES (2, 'Setup H2 Database', 'Configure H2 in-memory database with Hibernate', true, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+INSERT INTO Task (id, title, description, completed, createdAt, updatedAt) VALUES (3, 'Implement CRUD Operations', 'Create POST, GET, PUT, DELETE endpoints', false, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
